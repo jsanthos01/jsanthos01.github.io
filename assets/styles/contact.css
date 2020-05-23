@@ -5,17 +5,6 @@
     font-size: 22px;;
 }
 
-.info-area .row {
-    display: flex;
-    flex-direction: column;
-    max-width: 100%;
-    /* background-color:; */
-    /* padding: 40px; */
-    align-items: center;
-    justify-content: center;
-
-}
-
 .text-area h1{
     display: flex;
     width: 100%;
@@ -31,7 +20,7 @@
 .text-area h1::after{
     content: "";
     flex: 1;
-    border: solid #ff0066;
+    border: solid #4bf2ff;
     border-width: .1em 0;
     /* height: .2em; */
     margin: .2em;
@@ -46,21 +35,15 @@
     text-transform: uppercase;
     font-size: 35px;
     text-align: center;
-    padding: 40px;
+    padding: 10px;
     
 }
-.contact-info{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 100%;
-}
+
 
 .cardMain{
     background: #312d3c;
     display: flex;
     padding: 0 20px;
-    margin: 0 10px;
     display: flex;
     height: 150px;
     width: 100%;
@@ -73,7 +56,7 @@
 
 .card-icon  {
     font-size: 28px;
-    background-color: #ff0066;
+    background-color:  #ff0066;
     width: 60px;
     height: 60px;
     text-align: center;
@@ -107,7 +90,7 @@
 }
 
 .cardMain a{
-    color: white;
+    color: #ff0066;
     text-decoration: none;
     display:flex;
     align-items: center;
@@ -128,11 +111,7 @@
 }
 
 .message-area {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding: 50px 80px;   
-    color: rgb(45, 108, 129);
+    display: none;
 }
 
 .message-area input,
@@ -165,4 +144,49 @@
 
 .hide {
     display: none;
+}
+
+
+@media screen and (min-width: 768px) {
+    .info-area .row {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        /* padding: 40px; */
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact-info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 100%;
+    }
+
+    .connect {
+        /* font-family: '', serif; */
+        letter-spacing: 3px;
+        font-weight: bold;
+        color: #ff0066;
+        /* color: white; */
+        text-transform: uppercase;
+        font-size: 35px;
+        text-align: center;
+        padding: 40px;
+    }
+
+    .cardMain {
+        margin: 0 10px;
+    }
+
+    .message-area {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 50px 80px;
+        color: rgb(45, 108, 129);
+    }
+    
+
 }

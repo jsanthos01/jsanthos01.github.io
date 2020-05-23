@@ -4,9 +4,13 @@
 }
 
 .miniProjects {
-    padding: 3% 10%;
-    font-size: 22px;
-    background-color: #e7f3ff;
+    padding: 5%;
+    font-size: 18px;
+    background-image: linear-gradient(45deg, rgba(109, 42, 185, 0.133), rgba(0, 38, 255, 0.133)), linear-gradient(rgba(0, 0, 0, 0.333), rgba(0, 0, 0, 0.333)), url("../images/background2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
 }
 
 .textStuff h2{
@@ -45,22 +49,20 @@
 }
 
 .linksDiv a {
-    margin: 15px;
+    margin: 5px;
     font-size: 20px;
     font-family: 'Karla', sans-serif;  
     background-color: #ff0066;
     padding: 10px;  
-    border-radius: 80px;   
     color: white;
     font-weight: bold;
 }
 .linksDiv a:hover {
-    margin: 15px;
+    margin: 5px;
     font-size: 20px;
     font-family: 'Karla', sans-serif;  
     background-color: #ff0066;
     padding: 10px;  
-    border-radius: 80px;   
     color: white;
     font-weight: bold;
     filter: drop-shadow(1px 1px 5px #ff0066);
@@ -79,4 +81,33 @@
     columns: 2;
     padding: 20px;
     /* margin: 0 auto; */
+}
+
+@media screen and (min-width: 768px) {
+    .miniProjects {
+        padding: 3% 10%;
+        font-size: 22px;
+        background-image: linear-gradient(45deg, rgba(109, 42, 185, 0.133), rgba(0, 38, 255, 0.133)), linear-gradient(rgba(0, 0, 0, 0.333), rgba(0, 0, 0, 0.333)), url("../images/background2.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        object-fit: cover;
+    }
+    
+    .projectInfo .row .textStuff{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 22px;
+    }
+    .projectInfo .row .textStuff p {
+        background-color: #e7f3ff;
+        padding: 30px;
+        font-size: 22px;
+        font-family: 'Karla', sans-serif;
+        /* color: #ff0066;        */
+        
+    }
+    
+
 }

@@ -12,7 +12,6 @@ body {
 }
 .navbar .navbar-brand {
     font-family: 'Playfair Display', serif;
-    font-size: 45px;
 }
 
 .navbar .collapse {
@@ -55,8 +54,19 @@ body {
     left: 0; 
     color: #ff0066; 
 }
+
 .wrapper {
-    background-color: #e7f3ff;
+    color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+    background-image:   linear-gradient(45deg, rgba(109, 42, 185, 0.133), rgba(0, 38, 255, 0.133)), linear-gradient(rgba(0, 0, 0, 0.333), rgba(0, 0, 0, 0.333)),url("../images/background2.jpg");}
+
+.textMainHeader {
+    color: #4bf2ff;
+    font-weight: bold;
+    margin-top: 20px;
 }
 
 .headerMain {
@@ -64,27 +74,28 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 3% 10%;
+    padding: 5%;
 }
 
 .headerMain .row .text {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    text-align: center;
 }
 
 .h2specialLine{
     font-family: 'Playfair Display', serif;
-    font-size: 70px;
+    font-size: 40px;
 }
 
 .headerMain p{
-    font-size: 22px;
+    display: none;
 }
 
 .socialMediaIcons a{
     margin: 15px;
-    color: #ff0066;
+    color: #4bf2ff;
     font-size: 35px;
     transition: font-size .5s ease;
 
@@ -103,9 +114,8 @@ body {
 
 .pic-box .pic{
     display: block;
-    width: 450px;
-    height: 450px;
-    /* padding: 25px; */
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
     background-image: url(../images/me.jpg);
     background-size: cover;
@@ -115,7 +125,7 @@ body {
 }
 
 .aboutMe {
-    padding: 3% 10%;
+    padding: 5%;
     font-size: 22px;
 }
 
@@ -125,10 +135,7 @@ body {
 }
 
 .aboutMeBox img {
-    /* border-radius: 10px; */
-    width: 60%;
-    box-shadow: -40px -40px 1px -15px #ff0066;
-    margin: 10%;
+   display: none
 }
 
 .aboutText {
@@ -144,7 +151,7 @@ body {
 }
 
 .toolKit {
-    padding: 3% 10%;
+    padding: 5%;
     font-size: 22px;
 }
 
@@ -156,15 +163,17 @@ body {
     background-color: white;
     /* border: 2px solid #ff0066; */
     padding: 0;
+    color: black;
 }
 
 .skill-icons li {
-    margin: 50px;
+    margin: 10px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     padding: 5px;
+    font-size: 10px;
 
 
 }
@@ -175,4 +184,131 @@ body {
 }
 
 
+@media screen and (min-width: 768px) {
 
+    .wrapper {
+        color: white;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        object-fit: cover;
+        background-image:  url("../images/background2.jpg");
+
+    }
+
+    .headerMain {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 3% 10%;
+    }
+
+    .headerMain .row .text {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: start;
+
+    }
+
+    .h2specialLine{
+        font-family: 'Playfair Display', serif;
+        font-size: 70px;
+    }
+
+    .headerMain p{
+        display: block;
+        font-size: 22px;
+    }
+
+    .socialMediaIcons a{
+        margin: 15px;
+        color: #4bf2ff;
+        font-size: 35px;
+        transition: font-size .5s ease;
+
+    }
+    .socialMediaIcons a:hover{
+        margin: 15px;
+        cursor: pointer;
+        font-size: 2.5em;
+
+    }
+    .pic-box {
+        padding: 25px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .pic-box .pic{
+        display: block;
+        width: 450px;
+        height: 450px;
+        border-radius: 50%;
+        background-image: url(../images/me.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: none;
+        border: 20px solid rgba(0,0,0,0.5);
+    }
+
+    .aboutMe {
+        padding: 3% 10%;
+        font-size: 22px;
+    }
+
+    .aboutMeBox {
+        display: flex;
+        justify-content: center;
+    }
+
+    .aboutMeBox img {
+        display: block;
+        box-shadow: -40px -40px 1px -15px #ff0066;
+        margin: 10%;
+    }
+
+    .aboutText {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #specialh2 {
+        font-family: 'Playfair Display', serif;
+        font-size: 50px;
+    }
+
+    .toolKit {
+        padding: 3% 10%;
+        font-size: 22px;
+    }
+
+    .skill-icons {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: white;
+        padding: 0;
+        color: black;
+
+    }
+
+    .skill-icons li {
+        margin: 50px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
+        font-size: 20px;
+
+    }
+
+    .skill-icons i {
+        color: black;
+
+    }
+
+}
