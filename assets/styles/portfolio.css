@@ -6,11 +6,7 @@
 .miniProjects {
     padding: 5%;
     font-size: 18px;
-    background-image: linear-gradient(45deg, rgba(109, 42, 185, 0.133), rgba(0, 38, 255, 0.133)), linear-gradient(rgba(0, 0, 0, 0.333), rgba(0, 0, 0, 0.333)), url("../images/background2.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    object-fit: cover;
+    color: black;
 }
 
 .textStuff h2{
@@ -35,8 +31,7 @@
 }
 
 .projectInfo .row .textStuff p {
-    background-color: #e7f3ff;
-    padding: 30px;
+    padding: 30px 0;
     font-size: 18px;
     font-family: 'Karla', sans-serif;
     /* color: #ff0066;        */
@@ -87,11 +82,8 @@
     .miniProjects {
         padding: 3% 10%;
         font-size: 22px;
-        background-image: linear-gradient(45deg, rgba(109, 42, 185, 0.133), rgba(0, 38, 255, 0.133)), linear-gradient(rgba(0, 0, 0, 0.333), rgba(0, 0, 0, 0.333)), url("../images/background2.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        object-fit: cover;
+        color: black;
+
     }
     
     .projectInfo .row .textStuff{
@@ -101,8 +93,7 @@
         font-size: 22px;
     }
     .projectInfo .row .textStuff p {
-        background-color: #e7f3ff;
-        padding: 30px;
+        padding: 30px 0;
         font-size: 22px;
         font-family: 'Karla', sans-serif;
         /* color: #ff0066;        */
